@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Multimedial Asel</title>
+<link rel="icon" href="img/futuro.jpeg" type="image/jpeg">
+
+<style>
+
+/* ===== BODY ===== */
+body{
+  margin: 0;
+  background-color: #9765a3;
+  font-family: "Courier New", monospace;
+}
+
+
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("img/miku.jpeg"); 
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+
+.sidebar{
+  width: 200px;
+  background-color: rgba(219,190,227,0.6);
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: rgb(50, 2, 55);
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding-bottom: 5px;
+}
+
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bloque{
+  background-color: rgba(255,255,255,0.2);
+  padding: 180px;
+  border: 2px solid #dbbee3;
+
+  text-align: center;
+}
+
+.bloque h1{
+  font-family: "Comic Sans MS";
+  font-size: 60px;
+  color: rgba(50, 2, 55, 0.47);
+  margin-bottom: 60px;
+}
+
+.bloque p{
+  margin-top: 20px;
+ font-family: 'Courier New', monospace;
+  margin: 0;
+}
+.nombre{
+  font-size: 60px;
+  margin: 0;
+  color: rgb(76, 26, 169);
+}
+
+.sub{
+  font-size: 25px; 
+  margin-top: 10px;
+  color: rgba(19, 38, 44, 0.7);
+  letter-spacing: 2px; 
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  
+  <div class="sidebar">
+    <a href="obra.html">Obra</a>
+    <a href="galería.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <!-- ===== CONTENIDO ===== -->
+  <div class="main">
+    <div class="bloque">
+      <h1>MULTIMEDIAL</h1>
+ <p class="nombre"><strong>Axel Fernández</strong></p>
+  <p class="sub"><strong>Artista visual</strong></p>
+    </div>
+     
+    </div>
+
+
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Statement</title>
+<link rel="icon" href="img/futuro.jpeg" type="image/jpeg">
+
+<style>
+
+/* ===== BODY ===== */
+body{
+  margin: 0;
+  background-color: #86d199;
+  font-family: "Monocraft", monospace;
+}
+
+/* ===== FONDO ===== */
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("img/i1.jpg"); 
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* ===== LAYOUT ===== */
+.container{
+  display: flex;
+  min-height: 100vh; 
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+  width: 200px;
+  background-color: rgba(219,190,227,0.6);
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: rgb(50, 2, 55);
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding-bottom: 5px;
+}
+
+/* ===== MAIN ===== */
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== BLOQUE CENTRAL ===== */
+.bloque{
+  background-color: rgba(255,255,255,0.2);
+  padding: 80px;
+  border: 2px solid #dbbee3;
+  text-align: center;
+}
+
+/* ===== TITULO ===== */
+.bloque h1{
+  font-family: 'Monocraft';
+  font-size: 50px;
+  color: rgb(50, 2, 55);
+  margin-bottom: 40px;
+}
+
+/* ===== TEXTO ===== */
+.texto{
+    font-family: 'Monocraft';
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.texto p{
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(50, 2, 55);
+  margin-bottom: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <div class="sidebar">
+    <a href="index.html">Volver</a>
+  </div>
+
+  <!-- ===== CONTENIDO ===== -->
+  <div class="main">
+    <div class="bloque">
+
+      <h1>STATEMENT</h1>
+
+      <div class="texto">
+
+        <p>
+          <strong>
+         Mi obra aborda un testimonio de mi desarrollo en la cultura de internet y cómo la gente de mi generación interactúa con esta misma. Utilizo uso de la sátira y saturación de espacios, colores y personajes en general. No me límito a las técnicas análogas, haciendo uso tanto de la pintura tradicional como del código HTML y Processing. Mis trabajos nuscan esa síntesis de comunicación entre lo digital y el arte común.
+      </strong>
+      
+        </p>
+
+       
+       
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Contacto</title>
+<link rel="icon" href="img/futuro.jpeg" type="image/jpeg">
+
+<style>
+
+
+body{
+  margin: 0;
+  background-color: #afd8d9;
+  font-family: "Courier New", monospace;
+}
+
+
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("img/i11.jpg"); 
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+.container{
+  display: flex;
+  min-height: 100vh; 
+}
+
+
+.sidebar{
+  width: 200px;
+  background-color: rgba(219,190,227,0.6);
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: rgb(50, 2, 55);
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding-bottom: 5px;
+}
+
+
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bloque{
+  background-color: rgba(255,255,255,0.2);
+  padding: 80px;
+  border: 2px solid #dbbee3;
+  text-align: center;
+}
+
+
+.bloque h1{
+  font-size: 50px;
+  color: rgb(50, 2, 55);
+  margin-bottom: 40px;
+}
+
+
+.foto{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 2px solid #dbbee3;
+  margin-bottom: 30px;
+}
+
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links a{
+  text-decoration: none;
+  color: rgb(50, 2, 55);
+  font-size: 20px;
+  background-color: rgba(219,190,227,0.6);
+  padding: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+ 
+  <div class="sidebar">
+    <a href="index.html">Volver</a>
+  </div>
+
+
+  <div class="main">
+    <div class="bloque">
+
+      <h1>CONTACTO</h1>
+
+    
+      <img src="img/i12.jpg" class="foto">
+
+      <!-- LINKS -->
+      <div class="links">
+        <a href="https://instagram.com/mraxelblue" target="_blank">Instagram</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amfeern@gmail.com" target="_blank">
+  Correo
+</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Galería</title>
+<link rel="icon" href="img/futuro.jpeg" type="image/jpeg">
+
+<style>
+
+
+body{
+  margin: 0;
+  background-color: #77b8ba;
+  font-family: "Courier New", monospace;
+}
+
+
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("img/i14.jpg"); 
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+.container{
+  display: flex;
+  min-height: 100vh; 
+}
+
+
+.sidebar{
+  width: 200px;
+  background-color: rgba(219,190,227,0.6);
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: rgb(50, 2, 55);
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding-bottom: 5px;
+}
+
+
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque{
+  background-color: rgba(255,255,255,0.2);
+  padding: 80px;
+  border: 2px solid #dbbee3;
+  text-align: center;
+}
+
+
+.bloque h1{
+  font-family: 'Courier New', monospace;;
+  font-size: 50px;
+  color: rgb(50, 2, 55);
+  margin-bottom: 40px;
+}
+
+
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.galeria img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #dbbee3;
+
+  transition: transform 0.3s ease;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+  <div class="sidebar">
+    <a href="index.html">Volver</a> 
+
+  </div>
+
+
+  <div class="main">
+    <div class="bloque">
+
+      <h1>GALERÍA</h1>
+
+      <div class="galeria">
+        <img src="img/i1.jpg">
+        <img src="img/i2.jpg">
+        <img src="img/i3.png">
+
+        <img src="img/i4.png">
+        <img src="img/i5.jpg">
+        <img src="img/i6.jpg">
+
+        <img src="img/i7.jpg">
+        <img src="img/i8.JPG">
+        <img src="img/i9.JPG">
+
+        <img src="img/i10.jpg">
+        <img src="img/i11.jpg">
+        <img src="img/i12.jpg">
+
+        <img src="img/i13.jpg">
+        <img src="img/i14.jpg">
+        <img src="img/futuro.jpeg">
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
